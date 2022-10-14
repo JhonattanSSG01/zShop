@@ -1,3 +1,5 @@
+/* Estilos vista Index */
+/* Estilos body */
 .wrap-body{
   display: flex;
   flex-direction: column;
@@ -8,11 +10,14 @@
   width: 1000px;
 }
 
+/* Estilos header */
 .main-header .row{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/* Estilos content-box2 */
 
 .content-box.box-2 .wrap-box{
   display: grid;
@@ -44,21 +49,42 @@
   grid-area: 3 / 3 / 4 / 6;
 }
 
+/* Estilos content-box3 */
+.content-box.box-3 .row.wrap-box{
+  display: grid;
+  grid-template-columns: 50%;
+}
+
+/* Estilos footer */
+
 .wrap-footer .row:first-child{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
+/* Estilos vista single */
+
+.single-post .row.wrap-post{
+  margin: 0;
+}
+
+/* Estilos vista about */
+
 .flex-box{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+}
+
+/* Estilos vista contact */
+
+.t-center{
+  margin: 0;
+  padding: 50px;
 }
 
 #contact_form .row:first-child{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2fr;
   gap: 15px;
 }
