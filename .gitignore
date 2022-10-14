@@ -1,2 +1,2 @@
-readme.txt
-zShop.mp4
+#Ignora los archivos de video
+*.mp4
