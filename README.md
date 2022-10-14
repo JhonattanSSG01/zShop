@@ -1,5 +1,6 @@
 # Bienvenidos a zShop 👋👋‼
 ![image](https://user-images.githubusercontent.com/80645321/195891907-cd423d3e-47aa-40fa-99fa-b9be2f63f77e.png)
+Puedes visitarla en el sigiuiente link 👉 https://jhonattanssg01.github.io/zShop/
 
 # Inicio Del Proyecto 💢
 > Primordialmente se realizó un fork al repositorio de Jimmy, donde se encontraba todo lo relacionado con el proyecto de zShop, se hizo este método para tener una copia de ese repositorio en un nuevo repositorio pero en mi GitHub. Gracias a esto, podemos dar Git push sin afectar el repositorio original. Finalmente lo clone en local para poder trabajar.
