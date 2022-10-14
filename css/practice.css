@@ -19,7 +19,7 @@
 
 /* Estilos content-box2 */
 
-.content-box.box-2 .wrap-box{
+.content-box.box-2 >.wrap-box{
   display: grid;
   grid-template-columns: 40% 10% 10% 40%;
   grid-template-rows: repeat(3, 300px);
@@ -50,14 +50,13 @@
 }
 
 /* Estilos content-box3 */
-.content-box.box-3 .row.wrap-box{
+.content-box.box-3 >.row.wrap-box{
   display: grid;
   grid-template-columns: 50%;
 }
 
 /* Estilos footer */
-
-.wrap-footer .row:first-child{
+.wrap-footer >.row{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -65,13 +64,13 @@
 
 /* Estilos vista single */
 
-.single-post .row.wrap-post{
+.single-post >.row.wrap-post{
   margin: 0;
 }
 
 /* Estilos vista about */
 
-.flex-box{
+.row.wrap-post >.flex-box{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -83,7 +82,7 @@
   padding: 50px;
 }
 
-#contact_form .row:first-child{
+form .row:first-child{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
