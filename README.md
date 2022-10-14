@@ -38,9 +38,20 @@ En esta parte de los estilos, se modificó la parte superior que contiene el log
 
 ## Contendor de la caja #2⬛
 ```
+<div class="grid-principal">
+	<div class="col-2-5 box-item">
+		<a class="box-item-inner" href="#">
+      'Etiquetas correspondientes de cada caja'
+		</a>
+	</div>
+</div>
+```
+En esta parte del código altere un poco el HTML para poder alinear cada cajita en una cuadricula, lo que se hizo fue poner los div con clase ="box-item" dentro de un div para poder usar acorde la cuadricula en el CSS.
+
+```
 /* Estilos content-box2 */
 
-.content-box.box-2 .wrap-box{
+.content-box.box-2 >.wrap-box{
   display: grid;
   grid-template-columns: 40% 10% 10% 40%;
   grid-template-rows: repeat(3, 300px);
@@ -55,7 +66,7 @@ En esta parte de los estilos, se agregó una cuadrícula para acomodar favorable
 ## Contenedor de la caja #3🔳
 ```
 /* Estilos content-box3 */
-.content-box.box-3 .row.wrap-box{
+.content-box.box-3 >.row.wrap-box{
   display: grid;
   grid-template-columns: 50%;
 }
@@ -65,8 +76,7 @@ En esta parte de los estilos, se agregó una cuadrícula básica para acomodar e
 ## Contenedor pie de página(footer)🔘🔘
 ```
 /* Estilos footer */
-
-.wrap-footer .row:first-child{
+.wrap-footer >.row{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -78,8 +88,7 @@ En esta parte de los estilos, se agregó una cuadrícula básica de tres columna
 ```
 
 /* Estilos vista single */
-
-.single-post .row.wrap-post{
+.single-post >.row.wrap-post{
   margin: 0;
 }
 ```
@@ -88,8 +97,7 @@ En esta parte de los estilos, se modifico el espaciado entre el contenedor del h
 ## Vista About➰
 ```
 /* Estilos vista about */
-
-.flex-box{
+.row.wrap-post >.flex-box{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -99,13 +107,12 @@ En esta parte de los estilos, se agregó un cuadricula básica para alinear el c
 ## Vista contact➰
 ```
 /* Estilos vista contact */
-
 .t-center{
   margin: 0;
   padding: 50px;
 }
 
-#contact_form .row:first-child{
+form .row:first-child{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
