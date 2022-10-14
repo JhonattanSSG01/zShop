@@ -1,0 +1,64 @@
+.wrap-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zerogrid{
+  width: 1000px;
+}
+
+.main-header .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-box.box-2 .wrap-box{
+  display: grid;
+  grid-template-columns: 40% 10% 10% 40%;
+  grid-template-rows: repeat(3, 300px);
+}
+                                                
+.grid-principal{
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.grid-principal:nth-of-type(2){
+  grid-area: 1 / 2 / 2 / 6;
+}
+
+.grid-principal:nth-of-type(3){
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.grid-principal:nth-of-type(4){
+  grid-area: 2 / 4 / 3 / 6;
+}
+
+.grid-principal:nth-of-type(5){
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.grid-principal:nth-of-type(6){
+  grid-area: 3 / 3 / 4 / 6;
+}
+
+.wrap-footer .row:first-child{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.flex-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+#contact_form .row:first-child{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr;
+  gap: 15px;
+}
